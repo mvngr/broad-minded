@@ -2,6 +2,10 @@
 #define GAMEVIEW_H
 
 #include <QMainWindow>
+#include <QMessageBox>
+#include <QDebug>
+
+#include <gamereader.h>
 
 namespace Ui {
 class GameView;
@@ -17,6 +21,7 @@ public:
 
 private:
     Ui::GameView *ui;
+    GameReader *gr_;
 };
 
 #endif // GAMEVIEW_H
