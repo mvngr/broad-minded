@@ -1,0 +1,158 @@
+{
+	"name": "Синий раунд",
+	"row0": {
+		"subject": "Алгебра",
+		"color": [200,255,255],
+		"time": 60,
+		"column_number": 5,
+		"q0": {
+			"type": "c",
+			"cost": 133,
+			"text": "Test!!"
+		},
+		"q1": {
+			"type": "q",
+			"cost": 200,
+			"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam deleniti odit, et consequuntur ab officia qui, iusto id itaque, quisquam, fuga. Esse, nihil laudantium, adipisci vel quam accusantium veniam odit ab maxime voluptas amet reiciendis quod mollitia ipsum quae soluta est ipsam itaque dolorum eum numquam tempora qui, magni temporibus. Harum ducimus, esse, enim illum reiciendis non autem! Eos numquam nulla voluptatibus deleniti consequatur, sit delectus voluptates quas aspernatur nobis labore nesciunt modi natus sunt, cumque earum ex recusandae veritatis magni itaque explicabo commodi ducimus fugit. Ea, dolorem asperiores sunt ratione voluptatem eos, repudiandae cumque dolore delectus aspernatur esse, praesentium."
+		},
+		"q2": {
+			"type": "q",
+			"cost": 300,
+			"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem nesciunt molestiae fugit, maiores quis quia."
+		},
+		"q3": {
+			"type": "q",
+			"cost": 400,
+			"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam natus at, incidunt adipisci harum excepturi explicabo cupiditate, quisquam nihil quia perspiciatis eligendi voluptates, nemo enim ullam suscipit accusamus possimus sunt!"
+		},
+		"q4": {
+			"type": "q",
+			"cost": 500,
+			"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam natus at, incidunt adipisci harum excepturi explicabo cupiditate, quisquam nihil quia perspiciatis eligendi voluptates, nemo enim ullam suscipit accusamus possimus sunt!"
+		}
+	},
+	"row1": {
+		"subject": "Геометрия", 
+		"color": [255,200,255], 
+		"time": 60,
+		"column_number": 5,
+		"q0": {
+			"type": "q",
+			"cost": 100,
+			"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam natus at, incidunt adipisci harum excepturi explicabo cupiditate, quisquam nihil quia perspiciatis eligendi voluptates, nemo enim ullam suscipit accusamus possimus sunt!"
+		},
+		"q1": {
+			"type": "q",
+			"cost": 200,
+			"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam natus at, incidunt adipisci harum excepturi explicabo cupiditate, quisquam nihil quia perspiciatis eligendi voluptates, nemo enim ullam suscipit accusamus possimus sunt!"
+		},
+		"q2": {
+			"type": "q",
+			"cost": 300,
+			"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam natus at, incidunt adipisci harum excepturi explicabo cupiditate, quisquam nihil quia perspiciatis eligendi voluptates, nemo enim ullam suscipit accusamus possimus sunt!"
+		},
+		"q3": {
+			"type": "q",
+			"cost": 400,
+			"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam natus at, incidunt adipisci harum excepturi explicabo cupiditate, quisquam nihil quia perspiciatis eligendi voluptates, nemo enim ullam suscipit accusamus possimus sunt!"
+		},
+		"q4": {
+			"type": "q",
+			"cost": 500,
+			"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam natus at, incidunt adipisci harum excepturi explicabo cupiditate, quisquam nihil quia perspiciatis eligendi voluptates, nemo enim ullam suscipit accusamus possimus sunt!"
+		}
+	},
+	"row2": {
+		"subject": "Логика", 
+		"color": [255,255,200], 
+		"time": 60,
+		"column_number": 5,
+		"q0": {
+			"type": "q",
+			"cost": 100,
+			"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam natus at, incidunt adipisci harum excepturi explicabo cupiditate, quisquam nihil quia perspiciatis eligendi voluptates, nemo enim ullam suscipit accusamus possimus sunt!"
+		},
+		"q1": {
+			"type": "q",
+			"cost": 200,
+			"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam natus at, incidunt adipisci harum excepturi explicabo cupiditate, quisquam nihil quia perspiciatis eligendi voluptates, nemo enim ullam suscipit accusamus possimus sunt!"
+		},
+		"q2": {
+			"type": "q",
+			"cost": 300,
+			"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam natus at, incidunt adipisci harum excepturi explicabo cupiditate, quisquam nihil quia perspiciatis eligendi voluptates, nemo enim ullam suscipit accusamus possimus sunt!"
+		},
+		"q3": {
+			"type": "q",
+			"cost": 400,
+			"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam natus at, incidunt adipisci harum excepturi explicabo cupiditate, quisquam nihil quia perspiciatis eligendi voluptates, nemo enim ullam suscipit accusamus possimus sunt!"
+		},
+		"q4": {
+			"type": "q",
+			"cost": 500,
+			"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam natus at, incidunt adipisci harum excepturi explicabo cupiditate, quisquam nihil quia perspiciatis eligendi voluptates, nemo enim ullam suscipit accusamus possimus sunt!"
+		}
+	},
+	"row3": {
+		"subject": "Нестандартное", 
+		"color": [200,200,200],
+		"time": 60,
+		"column_number": 5,
+		"q0": {
+			"type": "q",
+			"cost": 100,
+			"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam natus at, incidunt adipisci harum excepturi explicabo cupiditate, quisquam nihil quia perspiciatis eligendi voluptates, nemo enim ullam suscipit accusamus possimus sunt!"
+		},
+		"q1": {
+			"type": "q",
+			"cost": 200,
+			"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam natus at, incidunt adipisci harum excepturi explicabo cupiditate, quisquam nihil quia perspiciatis eligendi voluptates, nemo enim ullam suscipit accusamus possimus sunt!"
+		},
+		"q2": {
+			"type": "q",
+			"cost": 300,
+			"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam natus at, incidunt adipisci harum excepturi explicabo cupiditate, quisquam nihil quia perspiciatis eligendi voluptates, nemo enim ullam suscipit accusamus possimus sunt!"
+		},
+		"q3": {
+			"type": "q",
+			"cost": 400,
+			"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam natus at, incidunt adipisci harum excepturi explicabo cupiditate, quisquam nihil quia perspiciatis eligendi voluptates, nemo enim ullam suscipit accusamus possimus sunt!"
+		},
+		"q4": {
+			"type": "q",
+			"cost": 500,
+			"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam natus at, incidunt adipisci harum excepturi explicabo cupiditate, quisquam nihil quia perspiciatis eligendi voluptates, nemo enim ullam suscipit accusamus possimus sunt!"
+		}
+	},
+	"row4": {
+		"subject": "Скорость наше всё",
+		"color": [255,255,255],
+		"time": 30,
+		"column_number": 5,
+		"q0": {
+			"type": "q",
+			"cost": 100,
+			"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam natus at, incidunt adipisci harum excepturi explicabo cupiditate, quisquam nihil quia perspiciatis eligendi voluptates, nemo enim ullam suscipit accusamus possimus sunt!"
+		},
+		"q1": {
+			"type": "q",
+			"cost": 200,
+			"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam natus at, incidunt adipisci harum excepturi explicabo cupiditate, quisquam nihil quia perspiciatis eligendi voluptates, nemo enim ullam suscipit accusamus possimus sunt!"
+		},
+		"q2": {
+			"type": "q",
+			"cost": 300,
+			"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam natus at, incidunt adipisci harum excepturi explicabo cupiditate, quisquam nihil quia perspiciatis eligendi voluptates, nemo enim ullam suscipit accusamus possimus sunt!"
+		},
+		"q3": {
+			"type": "q",
+			"cost": 400,
+			"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam natus at, incidunt adipisci harum excepturi explicabo cupiditate, quisquam nihil quia perspiciatis eligendi voluptates, nemo enim ullam suscipit accusamus possimus sunt!"
+		},
+		"q4": {
+			"type": "q",
+			"cost": 500,
+			"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam natus at, incidunt adipisci harum excepturi explicabo cupiditate, quisquam nihil quia perspiciatis eligendi voluptates, nemo enim ullam suscipit accusamus possimus sunt!"
+		}
+	}
+}

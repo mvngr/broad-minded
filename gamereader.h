@@ -10,6 +10,11 @@
 #include <QJsonObject>
 #include <QJsonArray>
 #include <QMap>
+#include <QList>
+#include <QColor>
+
+#define ROW_PREFIX "row"
+#define COL_PREFIX "q"
 
 class GameReader
 {
@@ -22,6 +27,8 @@ public:
     QString DEFAULT_FILE = "game1.json";
 
     QString getQuestion(int subjectId, int questionId, QuestionTypes &questionType, int &cost);
+    QList<QList<int> *> *getCostArray();
+    QList<QPair<QString, QColor> > *getTitles();
     bool readData();
     bool readData(QString path);
     QString questionTypesToString(QuestionTypes questionType);

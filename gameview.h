@@ -4,6 +4,10 @@
 #include <QMainWindow>
 #include <QMessageBox>
 #include <QDebug>
+#include <QGridLayout>
+#include <QLabel>
+#include <QPushButton>
+#include <QResizeEvent>
 
 #include <gamereader.h>
 
@@ -20,6 +24,10 @@ public:
     ~GameView();
 
 private:
+    virtual void resizeEvent(QResizeEvent *e) override;
+    QList<QList<QWidget *> *> *createField(QGridLayout *l);
+    QString toStyleSheet(QColor color);
+
     Ui::GameView *ui;
     GameReader *gr_;
 };

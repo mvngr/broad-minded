@@ -44,11 +44,11 @@ bool GameReader::readData(QString path){
 QString GameReader::getQuestion(int subjectId, int questionId, QuestionTypes &questionType, int &cost){
     if(!gameAlreadyRead_ && !readData())
         return "ERROR";
-    QString rowName = "row" + QString::number(subjectId);
-    QString colName = "q" + QString::number(questionId);
-    if(data_.find(rowName) != data_.end()){
+    QString rowName = ROW_PREFIX + QString::number(subjectId);
+    QString colName = COL_PREFIX + QString::number(questionId);
+    if(data_.contains(rowName)){
         QVariantMap row = data_[rowName].toMap();
-        if(row.find(colName) != row.end()){
+        if(row.contains(colName)){
             QVariantMap col = row[colName].toMap();
             questionType = stringToQuestionType[col["type"].toString()];
             cost = col["cost"].toInt();
@@ -56,6 +56,46 @@ QString GameReader::getQuestion(int subjectId, int questionId, QuestionTypes &qu
         }
     }
     return "ERROR";
+}
+QList<QList<int> *> *GameReader::getCostArray(){
+    QList<QList<int> *> *res = new QList<QList<int> *>;
+    if(!gameAlreadyRead_ && !readData())
+        return res;
+    size_t i = 0;
+    while(data_.contains(ROW_PREFIX + QString::number(i))){
+        res->push_back(new QList<int>);
+        QVariantMap row = data_[ROW_PREFIX + QString::number(i)].toMap();
+        size_t j = 0;
+        while(row.contains(COL_PREFIX + QString::number(j))){
+            QVariantMap element = row[COL_PREFIX + QString::number(j)].toMap();
+            res->at(i)->push_back(element.contains("cost") ? element["cost"].toInt() : 0);
+            j++;
+        }
+        i++;
+    }
+    return res;
+}
+QList<QPair<QString, QColor>> *GameReader::getTitles(){
+    QList<QPair<QString, QColor>> *res = new QList<QPair<QString, QColor>>;
+    if(!gameAlreadyRead_ && !readData())
+        return res;
+    size_t i = 0;
+    while(data_.contains(ROW_PREFIX + QString::number(i))){
+        QVariantMap row = data_[ROW_PREFIX + QString::number(i)].toMap();
+        QString subj = row["subject"].toString() + "\n" + QString::number(row["time"].toInt()) + " сек";
+        QJsonArray jAcolor = row["color"].toJsonArray();
+        QColor color;
+        for(int i = 0; i < jAcolor.size(); i++)
+            switch (i) {
+            case 0: color.setRed(jAcolor[i].toInt()); break;
+            case 1: color.setGreen(jAcolor[i].toInt()); break;
+            case 2: color.setBlue(jAcolor[i].toInt()); break;
+            default: break;
+            }
+        res->push_back(QPair<QString, QColor>(subj, color));
+        i++;
+    }
+    return res;
 }
 QString GameReader::questionTypesToString(QuestionTypes questionType){
     switch (questionType) {
