@@ -7,17 +7,17 @@ GameView::GameView(QWidget *parent) :
 {
     ui->setupUi(this);
 
+    teams_ = new Teams();
     gr_ = new GameReader();
+
     if(!gr_->readData())
         QMessageBox::warning(this, "Ошибка чтения", "Упс..\nПроизошла ошибка при чтении из \"" + gr_->DEFAULT_FILE + "\".");
     createField(ui->gridLayout_2);
 }
-
 GameView::~GameView()
 {
     delete ui;
 }
-
 void GameView::resizeEvent(QResizeEvent *e){
     if(e->size().width() <= 900)
         ui->centralWidget->setStyleSheet("font-size: 11pt;");
@@ -26,7 +26,6 @@ void GameView::resizeEvent(QResizeEvent *e){
     if(e->size().width()>1200)
         ui->centralWidget->setStyleSheet("font-size: 15pt;");
 }
-
 QList<QList<QWidget *> *> *GameView::createField(QGridLayout *l){
     QList<QPair<QString, QColor>> *themes = gr_->getTitles();
     QList<QList<int> *> *costs = gr_->getCostArray();
@@ -37,7 +36,7 @@ QList<QList<QWidget *> *> *GameView::createField(QGridLayout *l){
 
         QLabel *label = new QLabel(this);
         label->setText(themes->at(i).first);
-        label->setStyleSheet(toStyleSheet(themes->at(i).second));
+        label->setStyleSheet(toStyleSheet(themes->at(i).second) + "padding: 0 0.4em;");
         label->setAlignment(Qt::AlignCenter);
         label->setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Minimum);
 
@@ -57,14 +56,18 @@ QList<QList<QWidget *> *> *GameView::createField(QGridLayout *l){
     }
     return widgetRefs;
 }
+QList<QWidget *> *GameView::createTeamsArea(QVBoxLayout *l){
+    QList<QWidget *> *widgetRefs = new QList<QWidget *>;
+    //TODO
 
+}
 QString GameView::toStyleSheet(QColor color){
-    QString res = "QLabel { background-color: rgb(";
+    QString res = "background-color: rgb(";
     res += QString::number(color.red());
     res += ", ";
     res += QString::number(color.green());
     res += ", ";
     res += QString::number(color.blue());
-    res += "); }";
+    res += "); ";
     return res;
 }

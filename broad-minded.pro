@@ -26,11 +26,15 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         gameview.cpp \
-    gamereader.cpp
+    gamereader.cpp \
+    teams.cpp \
+    squad.cpp
 
 HEADERS += \
         gameview.h \
-    gamereader.h
+    gamereader.h \
+    teams.h \
+    squad.h
 
 FORMS += \
         gameview.ui
